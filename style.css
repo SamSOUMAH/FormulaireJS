@@ -1,0 +1,139 @@
+
+*{
+    box-sizing: border-box;
+}
+
+/* On cree les variables de coleurs */
+
+:root{
+    --color-first:#05857ad9;
+    --color-second:#f0f0f0;
+    --color-white:#fff;
+    --color-success:#2ecc71;
+    --color-error:#e74c3c;
+}
+
+body{
+    background: var(--color-first);
+    font-family: "Open sabs" sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+
+.container{
+    background: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+    width: 400px;
+    max-width: 100%;
+    visibility: hidden;
+}
+
+.header{
+    background: #f7f7f7;
+    border-bottom: 1px var(--color-second);
+    padding:20px 40px;
+}
+
+.header h2{
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.form{
+    padding: 30px 40px;
+    }
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid var(--color-second);
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.form-control i{
+ position: absolute;    /* On les mets sur une position absolue */
+ top: 33px;             /* On les mets sur la bonne position avec l'input */
+ right: 10px;           /* on les mets sur la droite de l'input */
+ visibility: hidden;    /* on les masque dabord, en attendant */
+}
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form button{
+    background: var(--color-first);
+    height: 35px;
+    border-radius: 8px;
+    margin: 20px 20px;
+    width: 110px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.form button:hover{
+    background: var(--color-success);
+}
+/* ---------les cas possible sur le formulaire en couleurs */
+.form-control.success input{
+    border-color: var(--color-success);
+}
+
+.form-control.error input{
+    border-color: var(--color-error);
+}
+
+.form-control.success i.fa-check-circle{
+    color: var(--color-success);
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation{
+    color: var(--color-error);
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: var(--color-error);
+    visibility: visible;
+}
+
+
+.Signup{
+    background: var(--color-first);
+    height: 35px;
+    border-radius: 8px;
+    margin: 20px 20px;
+    width: 110px;
+    color: var(--color-white);
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.Signup:hover{
+    background:rgb(53, 61, 61);
+    border: 2px solid rgb(5, 105, 109);
+}

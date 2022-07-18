@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" >
+
+    <link rel="stylesheet" href="/Fontawesome/css/all.min.css">
+
+    <script src="index.js" defer></script>
+    <title>FORMULAIRE</title>
+</head>
+<body>
+    <nav><button type="button" id="Signup" class="Signup"> <i class="fas fa-user-plus"></i> Sign In</button></nav>
+    <!-- le formulaire se dive en deux parti : l'Entete et le formulaire -->
+    <div class="container">
+        <div class="header">
+        <h2 class="fininsc">Creer un Compte</h2>
+        </div>
+
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" placeholder="Samsoumah"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'Erreurs</small>
+            </div>
+
+            <div class="form-control">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" placeholder="Samsoumah@gmail.com"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'Erreurs</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="**********"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'Erreurs</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Confirmation du Mot de passe</label>
+                <input type="password" id="password2" placeholder="***********"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation"></i>
+                <small>Message d'Erreurs</small>
+            </div>
+           <div>
+            <button type="submit" id="Submit"> <i class="fas fa-user-plus"></i> S'inscrire</button>
+            <button type="reset" id="Annuler"> <i class="fa fa-window-close" aria-hidden="true" style="color: red; font-Size:20px"></i> Quitter</button>
+           </div>
+        
+        </form>
+    </div>
+
+</body>
+</html>
