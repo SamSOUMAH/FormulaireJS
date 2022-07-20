@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" >
+
+    <link rel="stylesheet" href="/Fontawesome/css/all.min.css">
+
+    <script src="index.js" defer></script>
+    <title>FORMULAIRE TRANSPARENT</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="#" class="logo">Coding</a>
+        <ul>
+            <li><a href="#">Lien 1</a></li>
+            <li><a href="#">Lien 2</a></li>
+            <li><a href="#">Lien 3</a></li>
+            <li><a href="#">Lien 4</a></li>
+            <li>
+                <button class="btn" id="displayForm">Se connecter</button>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="sec-container">
+            <div class="form-wrapper">
+                <div class="card">
+                    <div class="card-header">
+                        <div id="forLogin" class="form-header Active" >Se connecter</div>
+                        <div id="forRegister" class="form-header" >S'inscire</div>
+                    </div>
+
+                    <div class="card-body" id="formContainer">
+                        
+                        <form id="formLogin">
+                            <input type="text" class="form-control" placeholder="EJILKJU"/>
+                            <input type="password" class="form-control" placeholder="Mot de pass"/>
+                            <button class="fromButton">Connexion</button>
+                        </form>
+
+                        <form id="formRegister" class="toggleForm">
+                            <input type="text" class="form-control" placeholder="@utilisateur"/>
+                            <input type="password" class="form-control" placeholder="@Mot de pass"/>
+                            <input type="password" class="form-control" placeholder="@Confirmer Mot de pass"/>
+                            <button class="fromButton" id="Inscription">Inscription</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
